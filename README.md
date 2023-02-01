@@ -10,8 +10,13 @@ The main purpose of this project is to create a career service platform, that al
 
 
 ## Team members:
-*Walid Achlaf 
-*Sarah Amanis 
-*Ivan Balkanski 
-*Myriam Benaissa 
-*Adam Boucher 
+* Walid Achlaf 
+* Sarah Amanis 
+* Ivan Balkanski 
+* Myriam Benaissa 
+* Adam Boucher 
+
+## Utilisized technologies:
+* JavaScript
+* HTML
+* PHP
