@@ -2,7 +2,7 @@
 
 ## Objective
 
-Create a career service platform
+Creation of a career service platform
 
 ## Project:
 
