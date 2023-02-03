@@ -13,7 +13,7 @@ The main purpose of this project is to create a career service platform, that al
 * Ivan Balkanski (Project leader/Backend design)
 * Adam Boucher (Backend design)
 * Charisse Flores (Frontend design)
-* Sandra Umurerw (Frontend design)
+* Sandra Umurerwa (Frontend design)
 
 ## Utilisized technologies:
 * JavaScript
