@@ -17,6 +17,7 @@ The main purpose of this project is to create a career service platform, that al
 
 ## Utilisized technologies:
 * JavaScript
+    * Node.JS for the backend
 * HTML
 * PHP
 * Python
