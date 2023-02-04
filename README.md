@@ -18,7 +18,7 @@ The main purpose of this project is to create a career service platform, that al
 ## Utilisized technologies:
 * JavaScript
     * Node.JS for the backend
-    * bing bong technology for the frontend
+    * Vue.JS for the frontend
 * HTML
 * PHP
 * Python
