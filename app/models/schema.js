@@ -24,8 +24,28 @@ const studentSchema = new Schema({
     gpa: {
         type: Number,
         required: true,
-    }
+    },
 
+    internships: {
+        type: [internshipSchema],
+        required: false,
+    },
+
+})
+
+const internshipSchema = new Schema ({
+    companyname: {
+        type: String,
+        required: true,
+    },
+    internshiplength: {
+        type: String,
+        required: true,
+    },
+    internshipTitle: {
+        type: String,
+        required: true,
+    },
 })
 
 const employerSchema = new Schema({
