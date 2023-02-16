@@ -109,8 +109,9 @@ const jobSchema = new Schema ({
         required: true,
     },
     applicants: {
-        type: []
-    }
+        type: [],
+        required: false,
+    },
 })
 
 const internshipSchema = new Schema ({
