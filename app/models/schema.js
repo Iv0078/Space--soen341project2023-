@@ -27,12 +27,12 @@ const studentSchema = new Schema({
     },
 
     internships: {
-        type: [jobSchema],
+        type: [],
         required: false,
     },
 
     appliedjobs: {
-        type: [jobSchema],
+        type: [],
         required: false,
     }
 })
@@ -49,12 +49,12 @@ const employerSchema = new Schema({
     },
 
     managers: {
-        type: [managerSchema],
+        type: [],
         required: true,
     },
 
-    jobposting: {
-        type: [jobSchema],
+    jobpostings: {
+        type: [],
         required: false,
     }
 })
@@ -76,14 +76,19 @@ const managerSchema = new Schema({
         type: String,
         required: true,
     },
+
 })
 
 const jobSchema = new Schema ({
     id: {
-        type: Number,
+        type: String,
         required: true,
     },
     title: {
+        type: String,
+        required: true,
+    },
+    description: {
         type: String,
         required: true,
     },
@@ -92,7 +97,7 @@ const jobSchema = new Schema ({
         required: true,
     },
     salary: {
-        type: Number,
+        type: String,
         required: false,
     },
     companyname: {
@@ -103,7 +108,17 @@ const jobSchema = new Schema ({
         type: String,
         required: true,
     },
-    internshipTitle: {
+    applicants: {
+        type: []
+    }
+})
+
+const internshipSchema = new Schema ({
+    title: {
+        type: String,
+        required: true,
+    },
+    companyname: {
         type: String,
         required: true,
     },
