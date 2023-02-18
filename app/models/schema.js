@@ -5,6 +5,10 @@ const studentSchema = new Schema({
         type: Number,
         required: true,
     },
+    password: {
+        type: String,
+        required: true,
+    },
     fname: {
         type: String,
         required: true,
@@ -47,9 +51,8 @@ const employerSchema = new Schema({
         type: String,
         required: true,
     },
-
-    managers: {
-        type: [],
+    password: {
+        type: String,
         required: true,
     },
 
@@ -59,25 +62,6 @@ const employerSchema = new Schema({
     }
 })
 
-const managerSchema = new Schema({
-    id: {
-        type: Number,
-        required: true,
-    },
-    email: {
-        type: String,
-        required: true,
-    },
-    fname: {
-        type: String,
-        required: true,
-    },
-    lname: {
-        type: String,
-        required: true,
-    },
-
-})
 
 const jobSchema = new Schema ({
     id: {
@@ -139,6 +123,10 @@ const adminSchema = new Schema({
         required: true,
     },
     email: {
+        type: String,
+        required: true,
+    },
+    password: {
         type: String,
         required: true,
     },
