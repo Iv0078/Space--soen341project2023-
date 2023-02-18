@@ -1,8 +1,10 @@
 import Students from '../../models/schema'
 import connectDB from '../../database/connect'
+import mongoose from 'mongoose'
 
-function handler() {
-    let connection = connectDB('SOEN341.Users')
+async function handler(form) {
+    let connection = await connectDB('SOEN341.Users')
+    const character = Students.model('Users')
 }
 
 
