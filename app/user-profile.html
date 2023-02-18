@@ -57,13 +57,13 @@
 
     
             <div class="bd-example">
-            <form>
+            <form name="studentProfile" action="" method="POST">
                 <fieldset disabled="">
                 <div class="mb-3">
-                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Student ID">
+                    <input type="text" name="studentid" id="disabledTextInput" class="form-control" placeholder="Student ID">
                 </div>
                 <div class="mb-3">
-                    <input type="text" id="disabledTextInput" class="form-control" placeholder="User ID">
+                    <input type="text" name="userid" id="disabledTextInput" class="form-control" placeholder="User ID">
                   </div>
                 </fieldset>
               <div class="form-floating mb-3">
@@ -74,7 +74,7 @@
                 <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
                 <label for="floatingPassword">Password</label>
               </div>
-              <div style="text-align: center;">
+              <div style="text-align: center">
                 <button type="button" class="btn btn-primary btn-lg" onclick="handler(this.FormData)">Save Changes</button></div>
               </div>
             </form>

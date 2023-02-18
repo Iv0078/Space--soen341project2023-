@@ -1,8 +1,12 @@
 import { Schema, model, models } from 'mongoose'
 
 const studentSchema = new Schema({
-    id: {
-        type: Number,
+    userid: {
+        type: String,
+        required: true,
+    },
+    studentid: {
+        type: String,
         required: true,
     },
     password: {
