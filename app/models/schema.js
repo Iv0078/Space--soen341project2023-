@@ -131,3 +131,7 @@ const adminSchema = new Schema({
         required: true,
     },
 })
+
+const Students = models.user || model('student', studentSchema)
+const Employers = models.user || model('employer', employerSchema)
+const Admins = models.user || model('admin', adminSchema)
