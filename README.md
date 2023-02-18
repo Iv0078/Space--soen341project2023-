@@ -16,9 +16,8 @@ The main purpose of this project is to create a career service platform, that al
 * Sandra Umurerwa (Frontend design)
 
 ## Utilisized technologies:
-* JavaScript
-    * Node.JS for the backend
-    * Vue.JS for the frontend
 * HTML
+* CSS
+    * Bootstrap
 * PHP
-* Python
+* JS
