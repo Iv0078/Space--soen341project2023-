@@ -4,7 +4,8 @@ import mongoose from 'mongoose'
 
 async function handler(form) {
     let connection = await connectDB('SOEN341.Users')
-    const character = Students.model('Users')
+    const character = new Students.model({
+    })
 }
 
 
