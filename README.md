@@ -18,6 +18,6 @@ The main purpose of this project is to create a career service platform, that al
 ## Utilisized technologies:
 * HTML
 * CSS
-    * Bootstrap
+* Bootstrap
 * PHP
 * JS
