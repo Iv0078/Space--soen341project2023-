@@ -1,0 +1,16 @@
+{
+  "name": "-space--soen341project2023-",
+  "version": "1.0.0",
+  "description": "Creation of a career service platform",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "type": "module"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^6.10.0"
+  }
+}
