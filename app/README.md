@@ -1,7 +1,7 @@
 # -Space--soen341project2023-
 
 
--- API's to be used for checking :
+-- API to be used for checking :
 
 * Postman:
 
