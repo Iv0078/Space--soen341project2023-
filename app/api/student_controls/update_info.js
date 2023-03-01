@@ -1,12 +1,25 @@
-import Students from '../../models/schema'
-import connectDB from '../../database/connect'
-import mongoose from 'mongoose'
+import conn from '../../database/connect';
+import mongoDB from 'mongodb';
 
-export async function updateInfo() {
-    connectDB('SOEN341.Users').catch((error) => res.json({ error: error.messaege}))
-    console.log("Hello");
 
-    // Students.findOneAndUpdate({ email : req.body.email }, )
+const db = conn.connectDB()
+
+export default function updateInfo() {
+    
+
+    try {
+        const users = db.collection('User');
+    } catch (e) {
+        return console.error(e);
+    }
+
+    const users = db.collection('User');
+
+    const result = await users.find({
+
+    })
+    
+
 }
 
 

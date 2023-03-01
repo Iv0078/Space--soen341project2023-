@@ -1,15 +1,35 @@
-import mongoose from 'mongoose'
+const { MongoClient } = require('mongodb');
 
-const connectDB = async (databaseName) => {
+const uri = "mongodb+srv://adampboucher:SOEN341@cluster0.v5jdyed.mongodb.net/?retryWrites=true&w=majority";
+const client = new MongoClient(uri);
+
+async function connectDB() {
    try {
-      const { connection } = await mongoose.connect(`mongodb+srv://adampboucher:SOEN341@cluster0.v5jdyed.mongodb.net/${databaseName}?retryWrites=true&w=majority`)
+      await client.connect();
+      const db = client.db('SOEN341');
+      return db;
+      const collection = db.collection('Jobs');
 
-      if (connection.readystate === 1) {
-         return Promise.resolve(true)
-      }
+      const findResult = await collection.find({}).toArray();
+      console.log('Found documents =>', findResult);
+
+
    } catch (err) {
-      return Promise.reject(err)
+      return console.error(err);
    }
 }
 
-export default connectDB
+async function close(client) {
+   client.close();
+}
+
+
+connectDB().catch(console.error);
+
+// async function listDatabases(client) {
+//    const dbList = client.db("SOEN341")
+//    const collection = dn.collecion
+//    // dbList.databases.forEach(db => {
+//    //    console.log(`${db.name}`);
+//    // })
+// }
