@@ -1,0 +1,1 @@
+console.log(JSON.parsewindow.localStorage.getItem('users'));
