@@ -1,6 +1,4 @@
 import mongodb from 'mongodb';
-const { MongoClient } = mongodb;
-
 
 export default async function connectDB(client) {
    try {
