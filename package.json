@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Creation of a career service platform",
   "main": "script.js",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "type": "commonjs"
+    "type": "module"
   },
   "author": "",
   "license": "ISC",
