@@ -1,8 +1,16 @@
 import { Schema, model, models } from 'mongoose'
 
 const studentSchema = new Schema({
-    id: {
-        type: Number,
+    userid: {
+        type: String,
+        required: true,
+    },
+    studentid: {
+        type: String,
+        required: true,
+    },
+    password: {
+        type: String,
         required: true,
     },
     fname: {
@@ -47,9 +55,8 @@ const employerSchema = new Schema({
         type: String,
         required: true,
     },
-
-    managers: {
-        type: [],
+    password: {
+        type: String,
         required: true,
     },
 
@@ -59,25 +66,6 @@ const employerSchema = new Schema({
     }
 })
 
-const managerSchema = new Schema({
-    id: {
-        type: Number,
-        required: true,
-    },
-    email: {
-        type: String,
-        required: true,
-    },
-    fname: {
-        type: String,
-        required: true,
-    },
-    lname: {
-        type: String,
-        required: true,
-    },
-
-})
 
 const jobSchema = new Schema ({
     id: {
@@ -142,4 +130,12 @@ const adminSchema = new Schema({
         type: String,
         required: true,
     },
+    password: {
+        type: String,
+        required: true,
+    },
 })
+
+const Students = models.user || model('student', studentSchema)
+const Employers = models.user || model('employer', employerSchema)
+const Admins = models.user || model('admin', adminSchema)

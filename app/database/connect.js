@@ -1,15 +1,17 @@
-import mongoose from 'mongoose'
+import mongodb from 'mongodb';
 
-const connectDB = async (databaseName) => {
+export default async function connectDB(client) {
    try {
-      const { connection } = await mongoose.connect(`mongodb+srv://adampboucher:SOEN341@cluster0.v5jdyed.mongodb.net/${databaseName}?retryWrites=true&w=majority`)
+      
+      const conn = await client.connect();
+      const db = await conn.db('SOEN341');
+      return db;
 
-      if (connection.readystate === 1) {
-         return Promise.resolve(true)
-      }
    } catch (err) {
-      return Promise.reject(err)
+      return console.error(err);
    }
 }
 
-export default connectDB
+export async function close(client) {
+   client.close();
+}
