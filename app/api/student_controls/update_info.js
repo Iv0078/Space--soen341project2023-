@@ -1,6 +1,4 @@
 import { default as connectDB } from '../../database/connect.js';
-import { close } from '../../database/connect.js'
-//const { conn } = connectDB();
 import mongoDB from 'mongodb';
 const { MongoClient } = mongoDB;
 
@@ -13,9 +11,11 @@ async function updateInfo() {
 
     const client = await connectDB(initialClient);
 
-
+    
     const users = client.collection('Users');
 
+    // test to see if we can retrieve information
+    // it works!
     const results = await users.find({ studentid: "40165035"}).toArray();
 
     console.log(results);
